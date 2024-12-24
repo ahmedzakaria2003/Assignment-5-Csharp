@@ -79,20 +79,31 @@
             //}
             #endregion
             #region q4
-            static int SumDigits(int num)
-            {
-                //int result = 0;
-                //while (num > 0)    
-                //{
-                //    result += num % 10;
-                //    num /= 10;
-                //}
-                //return result;
+            //static int SumDigits(int num)
+            //{
+            //    //int result = 0;
+            //    //while (num > 0)    
+            //    //{
+            //    //    result += num % 10;
+            //    //    num /= 10;
+            //    //}
+            //    //return result;
 
-            }
+            //}
             #endregion
             #region q5
+            //static bool isPrime(int n)
+            //{
+            //    if (n <= 1) return false;
 
+
+            //    for (int i = 2; i * i <= n; i++)  //n = 7         14
+            //    {
+            //        if (n % i == 0) return false;
+            //    }
+            //    return true;
+
+            //}
             #endregion
         }
     }
