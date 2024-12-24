@@ -69,8 +69,29 @@
             //Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
 
             #endregion
+            #region q3
+            //public static (int ,int) SumSub(int x ,int y, ref  int sum, ref  int sub)
+            //{
+            //    sum = x + y;
+            //    sub = x - y;
+            //    return (sum, sub);
 
+            //}
+            #endregion
+            #region q4
+            //static int SumDigits(int num)
+            //{
+            //    int result = 0;
+            //    while (num > 0)    // 543
+            //    {
+            //        result += num % 10;
+            //        num /= 10;
+            //    }
+            //    return result;
 
         }
+        #endregion
+
+    }
     }
 }
