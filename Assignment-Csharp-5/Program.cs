@@ -1,6 +1,6 @@
 ﻿namespace Assignment_Csharp_5
 {
- 
+
     internal class Program
     {
         #region q1
@@ -79,19 +79,21 @@
             //}
             #endregion
             #region q4
-            //static int SumDigits(int num)
-            //{
-            //    int result = 0;
-            //    while (num > 0)    // 543
-            //    {
-            //        result += num % 10;
-            //        num /= 10;
-            //    }
-            //    return result;
+            static int SumDigits(int num)
+            {
+                //int result = 0;
+                //while (num > 0)    
+                //{
+                //    result += num % 10;
+                //    num /= 10;
+                //}
+                //return result;
 
+            }
+            #endregion
+            #region q5
+
+            #endregion
         }
-        #endregion
-
     }
-    }
-
+}
