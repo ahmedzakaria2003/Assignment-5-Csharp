@@ -20,17 +20,17 @@
         {
 
             #region q1
-            int value = 20;
+            //int value = 20;
 
-            // Pass by value example
-            Console.WriteLine($"Before PassByValue: value = {value}");
-            PassByValue(value);
-            Console.WriteLine($"After PassByValue: value = {value}"); // Unchanged
+            //// Pass by value example
+            //Console.WriteLine($"Before PassByValue: value = {value}");
+            //PassByValue(value);
+            //Console.WriteLine($"After PassByValue: value = {value}"); // Unchanged
 
-            // Pass by reference example
-            Console.WriteLine($"Before PassByReference: value = {value}");
-            PassByReference(ref value);
-            Console.WriteLine($"After PassByReference: value = {value}"); // Changed
+            //// Pass by reference example
+            //Console.WriteLine($"Before PassByReference: value = {value}");
+            //PassByReference(ref value);
+            //Console.WriteLine($"After PassByReference: value = {value}"); // Changed
             #endregion
 
 
