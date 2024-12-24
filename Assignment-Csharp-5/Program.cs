@@ -57,16 +57,16 @@
             //Console.WriteLine($"After PassByReference: value = {value}"); // Changed
             #endregion
             #region q2
-            // Example for Pass by Value
-            Person person1 = new Person { Name = "David" };
-            Console.WriteLine("Before PassByValue: " + person1.Name); // David
-            PassByValue(person1); // Passes a copy of the reference
-            Console.WriteLine("After PassByValue: " + person1.Name); // David (reference in Main is unchanged)
-            // Pass by reference example
-            Person person2 = new Person { Name = "David" };
-            Console.WriteLine("Before PassByReference: " + person2.Name);
-            PassByReference(ref person2); // Changes the original reference to a new object
-            Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
+            //// Example for Pass by Value
+            //Person person1 = new Person { Name = "David" };
+            //Console.WriteLine("Before PassByValue: " + person1.Name); // David
+            //PassByValue(person1); // Passes a copy of the reference
+            //Console.WriteLine("After PassByValue: " + person1.Name); // David (reference in Main is unchanged)
+            //// Pass by reference example
+            //Person person2 = new Person { Name = "David" };
+            //Console.WriteLine("Before PassByReference: " + person2.Name);
+            //PassByReference(ref person2); // Changes the original reference to a new object
+            //Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
 
             #endregion
 
