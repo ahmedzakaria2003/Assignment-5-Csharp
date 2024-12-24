@@ -1,19 +1,43 @@
 ﻿namespace Assignment_Csharp_5
 {
+ 
     internal class Program
     {
         #region q1
-        static void PassByValue(int number)
+        //static void PassByValue(int number)
+        //{
+        //    number += 10;
+        //    Console.WriteLine($"Inside PassByValue: number = {number}"); // Modified inside the method
+        //}
+
+        //// Method that takes value-type parameters by reference
+        //static void PassByReference(ref int number)
+        //{
+        //    number += 10;
+        //    Console.WriteLine($"Inside PassByReference: number = {number}"); // Modified inside the method
+        //}
+        #endregion
+        #region q2
+        class Person
         {
-            number += 10;
-            Console.WriteLine($"Inside PassByValue: number = {number}"); // Modified inside the method
+            public string Name;
+        }
+        // Pass by value (reference type)
+        static void PassByValue(Person person)
+        {
+            person.Name = "John";  // Modifies the object's state (Name)
+            person = new Person(); // Creates a new object, doesn't affect the original reference
+            person.Name = "Alice"; // Modifies the new object
+            Console.WriteLine("Inside PassByValue: " + person.Name);
         }
 
-        // Method that takes value-type parameters by reference
-        static void PassByReference(ref int number)
+        // Pass by reference (reference type)
+        static void PassByReference(ref Person person)
         {
-            number += 10;
-            Console.WriteLine($"Inside PassByReference: number = {number}"); // Modified inside the method
+            person.Name = "Mike";  // Changes the Name
+            person = new Person(); // Changes the original reference
+            person.Name = "Sarah";
+            Console.WriteLine("Inside PassByReference: " + person.Name);
         }
         #endregion
         static void Main(string[] args)
@@ -31,6 +55,19 @@
             //Console.WriteLine($"Before PassByReference: value = {value}");
             //PassByReference(ref value);
             //Console.WriteLine($"After PassByReference: value = {value}"); // Changed
+            #endregion
+            #region q2
+            // Example for Pass by Value
+            Person person1 = new Person { Name = "David" };
+            Console.WriteLine("Before PassByValue: " + person1.Name); // David
+            PassByValue(person1); // Passes a copy of the reference
+            Console.WriteLine("After PassByValue: " + person1.Name); // David (reference in Main is unchanged)
+            // Pass by reference example
+            Person person2 = new Person { Name = "David" };
+            Console.WriteLine("Before PassByReference: " + person2.Name);
+            PassByReference(ref person2); // Changes the original reference to a new object
+            Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
+
             #endregion
 
 
