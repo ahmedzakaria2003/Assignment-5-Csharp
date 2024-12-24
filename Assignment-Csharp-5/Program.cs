@@ -105,6 +105,29 @@
 
             //}
             #endregion
+            #region q6
+            //static int[] MinMax(int[] arr)
+            //{
+
+            //    int min = arr[0];
+            //    int max = arr[0];
+
+            //    for (int i = 0; i < arr.Length; i++)
+            //    {
+            //        if (arr[i] > max)
+            //        {
+            //            max = arr[i];
+            //        }
+            //        if (arr[i] < min)
+            //        {
+            //            min = arr[i];
+            //        }
+            //    }
+            //    int[] result = { min, max };
+            //    return result;
+
+            //}
+            #endregion
         }
     }
 }
