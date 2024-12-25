@@ -1,4 +1,6 @@
-﻿namespace Assignment_Csharp_5
+﻿using System;
+
+namespace Assignment_Csharp_5
 {
 
     internal class Program
@@ -126,7 +128,6 @@
         static void Main(string[] args)
         {
 
-            #region q1
             //int value = 20;
 
             //// Pass by value example
@@ -138,8 +139,9 @@
             //Console.WriteLine($"Before PassByReference: value = {value}");
             //PassByReference(ref value);
             //Console.WriteLine($"After PassByReference: value = {value}"); // Changed
-            #endregion
-            #region q2
+            //-----------------------------//
+
+
             //// Example for Pass by Value
             //Person person1 = new Person { Name = "David" };
             //Console.WriteLine("Before PassByValue: " + person1.Name); // David
@@ -151,8 +153,28 @@
             //PassByReference(ref person2); // Changes the original reference to a new object
             //Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
 
-            #endregion
-         
+            //-----------------------------
+            //bool prime = isPrime(num);
+            //if (prime)
+            //{
+            //    Console.WriteLine("prime");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("not prime");
+            //}
+            //------------------------------------
+            //int[] arr = { 10, 2, 5, 7, 4, 7, -5 };
+            //int[] arrResult = MinMax(arr);
+            //Console.WriteLine(arrResult[0]);
+            //Console.WriteLine(arrResult[1]);
+            //----------------------------------------
+            //factorial problem
+            //Console.WriteLine(Factorial(7));
+            //----------------------------------------
+            //Console.WriteLine(ChangeChar("ahmed", 7, 'h'));
+
+
         }
     }
 }
