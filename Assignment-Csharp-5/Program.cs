@@ -139,6 +139,19 @@
             //    return (result);
             //}
             #endregion
+            #region q8
+            //static string ChangeChar(string str, int pos, char newChar)
+            //{
+            //    if (pos < 0 || pos > str.Length)
+            //    {
+            //        throw new ArgumentOutOfRangeException(nameof(pos), "position is out of range");
+            //    }
+
+            //    char[] chars = str.ToCharArray();
+            //    chars[pos] = newChar;
+            //    return new string(chars);
+            //}
+            #endregion
         }
     }
 }
