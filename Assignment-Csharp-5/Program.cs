@@ -40,6 +40,89 @@
             Console.WriteLine("Inside PassByReference: " + person.Name);
         }
         #endregion
+        #region q3
+        //public static (int ,int) SumSub(int x ,int y, ref  int sum, ref  int sub)
+        //{
+        //    sum = x + y;
+        //    sub = x - y;
+        //    return (sum, sub);
+
+        //}
+        #endregion
+        #region q4
+        //static int SumDigits(int num)
+        //{
+        //    //int result = 0;
+        //    //while (num > 0)    
+        //    //{
+        //    //    result += num % 10;
+        //    //    num /= 10;
+        //    //}
+        //    //return result;
+
+        //}
+        #endregion
+        #region q5
+        //static bool isPrime(int n)
+        //{
+        //    if (n <= 1) return false;
+
+
+        //    for (int i = 2; i * i <= n; i++)  //n = 7         14
+        //    {
+        //        if (n % i == 0) return false;
+        //    }
+        //    return true;
+
+        //}
+        #endregion
+        #region q6
+        //static int[] MinMax(int[] arr)
+        //{
+
+        //    int min = arr[0];
+        //    int max = arr[0];
+
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        if (arr[i] > max)
+        //        {
+        //            max = arr[i];
+        //        }
+        //        if (arr[i] < min)
+        //        {
+        //            min = arr[i];
+        //        }
+        //    }
+        //    int[] result = { min, max };
+        //    return result;
+
+        //}
+        #endregion
+        #region q7
+        //static int Factorial(int n)
+        //{
+        //    int result = 1;
+        //    for (int i = 1; i <= n; i++)
+        //    {
+        //        result *= i;
+        //    }
+        //    return (result);
+        //}
+        #endregion
+        #region q8
+        //static string ChangeChar(string str, int pos, char newChar)
+        //{
+        //    if (pos < 0 || pos > str.Length)
+        //    {
+        //        throw new ArgumentOutOfRangeException(nameof(pos), "position is out of range");
+        //    }
+
+        //    char[] chars = str.ToCharArray();
+        //    chars[pos] = newChar;
+        //    return new string(chars);
+        //}
+        #endregion
         static void Main(string[] args)
         {
 
@@ -69,89 +152,7 @@
             //Console.WriteLine("After PassByReference: " + person2.Name); // Name is now "Sarah"
 
             #endregion
-            #region q3
-            //public static (int ,int) SumSub(int x ,int y, ref  int sum, ref  int sub)
-            //{
-            //    sum = x + y;
-            //    sub = x - y;
-            //    return (sum, sub);
-
-            //}
-            #endregion
-            #region q4
-            //static int SumDigits(int num)
-            //{
-            //    //int result = 0;
-            //    //while (num > 0)    
-            //    //{
-            //    //    result += num % 10;
-            //    //    num /= 10;
-            //    //}
-            //    //return result;
-
-            //}
-            #endregion
-            #region q5
-            //static bool isPrime(int n)
-            //{
-            //    if (n <= 1) return false;
-
-
-            //    for (int i = 2; i * i <= n; i++)  //n = 7         14
-            //    {
-            //        if (n % i == 0) return false;
-            //    }
-            //    return true;
-
-            //}
-            #endregion
-            #region q6
-            //static int[] MinMax(int[] arr)
-            //{
-
-            //    int min = arr[0];
-            //    int max = arr[0];
-
-            //    for (int i = 0; i < arr.Length; i++)
-            //    {
-            //        if (arr[i] > max)
-            //        {
-            //            max = arr[i];
-            //        }
-            //        if (arr[i] < min)
-            //        {
-            //            min = arr[i];
-            //        }
-            //    }
-            //    int[] result = { min, max };
-            //    return result;
-
-            //}
-            #endregion
-            #region q7
-            //static int Factorial(int n)
-            //{
-            //    int result = 1;
-            //    for (int i = 1; i <= n; i++)
-            //    {
-            //        result *= i;
-            //    }
-            //    return (result);
-            //}
-            #endregion
-            #region q8
-            //static string ChangeChar(string str, int pos, char newChar)
-            //{
-            //    if (pos < 0 || pos > str.Length)
-            //    {
-            //        throw new ArgumentOutOfRangeException(nameof(pos), "position is out of range");
-            //    }
-
-            //    char[] chars = str.ToCharArray();
-            //    chars[pos] = newChar;
-            //    return new string(chars);
-            //}
-            #endregion
+         
         }
     }
 }
